@@ -25,6 +25,10 @@ $theme-bg-color:        $cyan;
 $navbar-bg-color:       $teal;
 $navbar-hover-bg-color: $dark;
 
+body {
+  background-color: $dark;
+}
+
 @import "header";
 
 @import "menu";

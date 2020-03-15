@@ -9875,6 +9875,10 @@ h3 {
     border-color: #dee2e6;
   }
 }
+body {
+  background-color: #343a40;
+}
+
 #header .user h6, #header .logo-title h3 {
   line-height: 0.9;
   margin-bottom: 0rem;
@@ -9959,10 +9963,11 @@ h3 {
 }
 
 #content {
-  min-height: 600px;
+  min-height: calc(100vh - 150px);
   background-color: #575859;
   margin-top: 6px;
   padding-top: 15px;
+  margin-bottom: 46px;
 }
 #content .card {
   margin-bottom: 15px;
