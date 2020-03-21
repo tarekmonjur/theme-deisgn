@@ -10018,6 +10018,9 @@ body {
 #content .card .card-body .table .actions img {
   width: 20px;
 }
+#content .card .card-body img {
+  width: 21px;
+}
 #content .card .card-footer {
   color: #343a40;
   font-size: 0.85rem;
@@ -10058,9 +10061,53 @@ body {
 #content .card .btn:not(:disabled):not(.disabled):active:focus, #content .card .btn:not(:disabled):not(.disabled).active:focus, .show > #content .card .btn.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(65, 209, 167, 0.5);
 }
+#content #login {
+  background-color: #fff;
+}
+#content #login .btn {
+  color: #fff;
+  background-color: #20c997;
+  border-color: #20c997;
+}
+#content #login .btn:hover {
+  color: #fff;
+  background-color: #1ba87e;
+  border-color: #199d76;
+}
+#content #login .btn:focus, #content #login .btn.focus {
+  color: #fff;
+  background-color: #1ba87e;
+  border-color: #199d76;
+  box-shadow: 0 0 0 0.2rem rgba(65, 209, 167, 0.5);
+}
+#content #login .btn.disabled, #content #login .btn:disabled {
+  color: #fff;
+  background-color: #20c997;
+  border-color: #20c997;
+}
+#content #login .btn:not(:disabled):not(.disabled):active, #content #login .btn:not(:disabled):not(.disabled).active, .show > #content #login .btn.dropdown-toggle {
+  color: #fff;
+  background-color: #199d76;
+  border-color: #17926e;
+}
+#content #login .btn:not(:disabled):not(.disabled):active:focus, #content #login .btn:not(:disabled):not(.disabled).active:focus, .show > #content #login .btn.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(65, 209, 167, 0.5);
+}
 
 #main {
   background-color: #343a40;
+}
+#main .login {
+  position: relative;
+  overflow: hidden;
+}
+#main .login .banner img {
+  position: absolute;
+  left: 0;
+  top: -45%;
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
 }
 
 #footer {

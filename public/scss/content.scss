@@ -77,6 +77,10 @@ $card-btn-color:  $navbar-bg-color;
           }
         }
       }
+
+      img {
+        width: 21px;
+      }
     }
 
     .card-footer {
@@ -102,5 +106,13 @@ $card-btn-color:  $navbar-bg-color;
     //    @include button-outline-variant($value);
     //  }
     //}
+  }
+
+  #login {
+    background-color: $white;
+
+    .btn {
+      @include button-variant($card-btn-color, $card-btn-color);
+    }
   }
 }

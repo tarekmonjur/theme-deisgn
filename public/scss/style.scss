@@ -37,6 +37,42 @@ body {
 
 #main{
   background-color: $dark;
+
+  .login {
+    position: relative;
+    overflow: hidden;
+
+    .banner {
+
+      img {
+        position: absolute;
+        left: 0;
+        top: -45%;
+        width: 100%;
+        height: auto;
+        opacity: 0.6;
+      }
+    }
+
+    //.banner::before {
+    //  content: ' ';
+    //  display: block;
+    //  position: absolute;
+    //  left: 0;
+    //  top: 0;
+    //  width: 100%;
+    //  height: 100%;
+    //  opacity: 0.6;
+    //  background-image: url('../hospital-banner.png');
+    //  background-repeat: no-repeat;
+    //  background-position: center;
+    //  -ms-background-size: cover;
+    //  -o-background-size: cover;
+    //  -moz-background-size: cover;
+    //  -webkit-background-size: cover;
+    //  background-size: cover;
+    //}
+  }
 }
 
 @import "footer";
