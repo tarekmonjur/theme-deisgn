@@ -13,6 +13,27 @@
 
   .navbar {
     @extend %menu-navbar;
+
+    .dropdown-menu {
+      border-radius: 0;
+      color: $navbar-color;
+      background-color: $navbar-bg-color;
+
+      .dropdown-item {
+        color: $navbar-color;
+        padding: .4rem 1rem;
+
+        @include hover-focus() {
+          background-color: $navbar-hover-bg-color;
+          color: $navbar-hover-color;
+        }
+      }
+
+      img {
+        vertical-align: top;
+        width: 28px;
+      }
+    }
   }
 
   .navbar-toggler {
