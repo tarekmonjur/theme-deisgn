@@ -8,9 +8,9 @@ const app = http.createServer((req, res) => {
     let filePath = '';
     let contentType = '';
 
-    if (url.ext === '.html') {
+    if (url.ext === '.html' || url.ext === '') {
         contentType = 'text/html';
-        filePath = path.join(__dirname, 'views/', url.base);
+        filePath = path.join(__dirname, 'views/', url.base === '' ? 'index.html': url.base);
         console.log(filePath);
     } else if (url.ext === '.css'){
         contentType = 'text/css';
